@@ -1,0 +1,108 @@
+:root {
+    --white: #fff;
+    --blue: #2B689B;
+    --light-blue:  #83b7e0;
+    --red: rgb(231, 76, 60);
+    --light-red: rgb(255, 182, 193);
+    --light-green: #84d2db;
+    --yellow: #FFD970;
+    --shadow: rgba(14, 76, 121, 0.18)
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.reset__block {
+    padding: 25px 0;
+    background-color: var(--white);
+    min-width: 500px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 25px var(--shadow);
+}
+
+.reset__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    height: 50px;
+}
+
+.reset__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 128px;
+    height: 30px;
+}
+
+.reset__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 450px;
+    min-width: 450px;
+}
+
+.reset__form_input {
+    height: 36px;
+    padding: 0 22px 10px;
+    display: block;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid var(--blue) ;
+}
+
+.reset__form_input::placeholder {
+    color: var(--light-blue);
+}
+
+.reset__form_control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset__form_control::before,
+p::before {
+    content: "* ";
+    color: var(--light-red);
+}
+
+.reset__form_input:focus {
+    outline: 0;
+    outline-offset: 0;
+    border-bottom: 1px solid var(--light-green) ;
+}
+
+.reset__form_button {
+    padding: 20px 40px;
+    display: block;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a.reset__form_link:active, 
+a.reset__form_link:hover,
+a.reset__form_link {
+  text-decoration: none;
+}
+
+.reset__form_links {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    width: 100%;
+}

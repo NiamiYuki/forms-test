@@ -1,0 +1,63 @@
+/* Manrope font */
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
+         url('../fonts/Manrope-Bold.woff') format('woff');
+  }
+
+  /* Inter font */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+         url('../fonts/Inter-Regular.woff') format('woff');
+  }
+
+:root {
+    --tittle-font: 'Manrope', sans-serif;
+    --text-font: 'Inter', sans-serif;
+
+    --tittle-text-color:#2B689B;
+    --text-color: #292A2C;
+} 
+
+.title {
+    font-family: var(--tittle-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--tittle-text-color);
+}
+
+.text {
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--tittle-text-color);
+}
+
+.button_font {
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: var(--tittle-text-color);
+}
+
+.link_font {
+    font-family: var(--tittle-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--tittle-text-color);
+}
