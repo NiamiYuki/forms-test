@@ -51,11 +51,10 @@
     align-items: center;
     box-sizing: border-box;
     min-height: 450px;
-    min-width: 450px;
 }
 
 .reset__form_input {
-    height: 36px;
+    height: 100%;
     padding: 0 22px 10px;
     display: block;
     border: none;
@@ -68,13 +67,14 @@
 }
 
 .reset__form_control {
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .reset__form_control::before,
-p::before {
+.reset__form_text::before {
     content: "* ";
     color: var(--light-red);
 }
@@ -104,5 +104,9 @@ a.reset__form_link {
     display: flex;
     gap: 35px;
     justify-content: center;
+    width: 100%;
+}
+
+.reset__form_text {
     width: 100%;
 }
