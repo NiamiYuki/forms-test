@@ -56,13 +56,14 @@
 }
 
 .reset__form_input {
-    display: block;
+    display: flex;
     width: 350px;
     height: 100%;
     padding: 10px 22px;
     border: none;
     background: transparent;
     border-bottom: 1px solid var(--blue) ;
+    
 }
 
 .reset__form_input::placeholder {
@@ -71,14 +72,17 @@
 
 .reset__form_control {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
 
 .reset__form_control::before,
 .reset__form_text::before {
     content: "* ";
     color: var(--light-red);
+    position: absolute;
+    top: 5px;
+    left: 11px;
 }
 
 .reset__form_input:focus {
@@ -111,5 +115,15 @@ a.reset__form_link {
 }
 
 .reset__form_text {
-    width: 400px;
+    width: 370px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.reset__form_warning {
+    padding-left: 15px;
+}
+
+.reset__form_warning {
+    visibility: hidden;
 }

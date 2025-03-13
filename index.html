@@ -23,18 +23,26 @@
                     <form  class="reset__form" id="form">
                         <div class="reset__form_control">
                             <input  required class="reset__form_input text" type="text" name="username" id="username" placeholder="Email / Логин">
+                            <span class="reset__form_warning warning_font">Неверный Логин или Email</span>
                         </div>
+                       
                         <div class="reset__form_control">
                             <input  required class="reset__form_input text" type="text" name="secret" id="secret" placeholder="Контрольная строка">
+                            <span class="reset__form_warning warning_font">Неверное контрольное слово</span>
                         </div>
                         <div class="reset__form_control">
-                            <input  required class="reset__form_input text" type="text" name="password" id="password" placeholder="Новый пароль">
+                            <input  required class="reset__form_input text" type="password" name="password" id="password" placeholder="Новый пароль">
+                            <span class="reset__form_warning warning_font">Пароль должен быть не менее 6 символов</span>
+                            <span class="eye-icon" id="toggle-password" onclick="togglePassword('password')">показать</span>
+
                         </div>
                         <div class="reset__form_control">
-                            <input  required class="reset__form_input text" type="text" name="password_two" id="password_two" placeholder="Подтверждение пароля">
+                            <input  required class="reset__form_input text" type="password" name="password_two" id="password_two" placeholder="Подтверждение пароля">
+                            <span class="reset__form_warning warning_font">Пароли не совпадают</span>
+                            <span class="eye-icon" id="toggle-password" onclick="togglePassword('password_two')">показать</span>
                         </div>
                         <p class="reset__form_text text">Обязательные поля</p>
-                        <button class="reset__form_button button_font">Изменить пароль</button>
+                        <button type="button" class="reset__form_button button_font" onclick="sendData()">Изменить пароль</button>
                         <div class="reset__form_links">
                             <a href="" class="reset__form_link link_font">Зарегистрироваться</a>
                             <a href="" class="reset__form_link link_font">Войти</a>
@@ -43,7 +51,7 @@
                 </div>
             </div>
         </div>
-    </section>
-    
+    </section>   
+<script src="script.js"></script>
 </body>
 </html>
