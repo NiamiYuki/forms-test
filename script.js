@@ -48,10 +48,10 @@ function sendData() {
   console.log(authData);
 }
 
-function togglePassword(id) {
+function togglePassword(id, showId) {
   const passwordField = document.getElementById(id);
   const currentType = passwordField.type;
-  const isShow = document.getElementById("toggle-password");
+  const isShow = document.getElementById(showId);
 
   if (currentType === "password") {
     passwordField.type = "text";

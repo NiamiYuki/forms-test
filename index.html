@@ -33,13 +33,13 @@
                         <div class="reset__form_control">
                             <input  required class="reset__form_input text" type="password" name="password" id="password" placeholder="Новый пароль">
                             <span class="reset__form_warning warning_font">Пароль должен быть не менее 6 символов</span>
-                            <span class="eye-icon" id="toggle-password" onclick="togglePassword('password')">показать</span>
+                            <span class="eye-icon" id="toggle-password" onclick="togglePassword('password', 'toggle-password')">показать</span>
 
                         </div>
                         <div class="reset__form_control">
                             <input  required class="reset__form_input text" type="password" name="password_two" id="password_two" placeholder="Подтверждение пароля">
                             <span class="reset__form_warning warning_font">Пароли не совпадают</span>
-                            <span class="eye-icon" id="toggle-password" onclick="togglePassword('password_two')">показать</span>
+                            <span class="eye-icon" id="toggle-password-two" onclick="togglePassword('password_two', 'toggle-password-two')">показать</span>
                         </div>
                         <p class="reset__form_text text">Обязательные поля</p>
                         <button type="button" class="reset__form_button button_font" onclick="sendData()">Изменить пароль</button>
